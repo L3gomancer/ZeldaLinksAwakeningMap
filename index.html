@@ -1,0 +1,31 @@
+<!doctype html><title>Floating elements</title><style>#stage {     display: block;     width: 400px;     height: 300px;     border: 1px dashed black;}
+
+.animal {  display: block;  width: 100px;  height: 100px;
+
+  float: left;
+  margin-top: 50px; 
+  margin-left: 25px;}#cat {  background-image: url("cat.png");}#tiger {  background-image: url("tiger.png");}#hedgehog {  background-image: url("hedgehog.png");}
+
+
+@font-face 
+{  font-family: LondrinaSolid-Regular;  src: url("LondrinaSolid-Regular.otf");}
+
+h1
+{
+     clear: left;     display: block;     text-align: center;     padding-top: 50px;     font-family: LondrinaSolid-Regular;     font-size: 40px;
+}
+
+
+
+</style><div id="stage">  <div class="animal" id="cat"></div>  <div class="animal" id="tiger"></div>  <div class="animal" id="hedgehog"></div>
+<h1>Dangerous Animals!</h1></div>
+
+
+
+<!-- p42 add margins to space things out. And text. Notable is linking in a font in css "@font" 
+and "display: block" mentioned in a boxout p45 [are these all in one file? where are exercise files?] -->
+<!-- p43 If you want to add a new element below some floating elements, you need to set the new element’s clear property.clear: left;This will cause the new element to appear under left-floating elements. 
+The clear property also accepts thevalues right and both. -->
+<!-- p45 "text-align: inherit;" means that it should follow whatever text-align rule that its containing element is using.You can use text-align to center text, but it won’t work for block elements. If you want to center a block element inside another element, use the margin property -->
+
+
